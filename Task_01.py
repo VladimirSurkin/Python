@@ -20,6 +20,7 @@ class Matrix:
         except IndexError:
             return f'Ошибка размерности матриц'
 
-matrix_1 = Matrix([[3,5,32], [2,4,6],[-1,64,-8]])
-matrix_2 = Matrix([[3,5,8], [8,3,7],[3,1,16]])
+
+matrix_1 = Matrix([[3, 5, 32], [2, 4, 6], [-1, 64, -8]])
+matrix_2 = Matrix([[3, 5, 8], [8, 3, 7], [3, 1, 16]])
 print(matrix_1.__add__(matrix_2))

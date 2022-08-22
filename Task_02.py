@@ -1,8 +1,8 @@
 # Task_02
 from abc import ABC, abstractmethod
 
-class My_clothes(ABC):
 
+class My_clothes(ABC):
     result = 0
 
     def __init__(self, param):
@@ -22,6 +22,7 @@ class My_clothes(ABC):
         My_clothes.result = 0
         return f"{total_res}"
 
+
 class Coat(My_clothes):
     @property
     def consumption(self):
@@ -36,5 +37,4 @@ class Costume(My_clothes):
 
 coat = Coat(44)
 costume = Costume(170)
-print(coat+costume)
-
+print(coat + costume)
